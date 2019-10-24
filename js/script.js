@@ -4,7 +4,7 @@ let windowHeight = window.innerHeight;
 let body = document.body;
 let scores = document.querySelectorAll('.score');
 let num = 0;
-let total = 100;
+let total = 50;
 let currentBalloon = 0;
 let gameOver = false;
 let totalShadow = document.querySelector('.total-shadow');
@@ -15,7 +15,7 @@ function createBalloon() {
     let rand = Math.floor(Math.random() * colors.length);
     div.className = 'balloon balloon-' + colors[rand];
 
-    rand = Math.floor(Math.random() * (windowWidth - 100));
+    rand = Math.floor(Math.random() * (windowWidth - 50));
     div.style.left = rand + 'px';
     div.dataset.number = currentBalloon;
     currentBalloon++;
